@@ -8,7 +8,7 @@ import (
 )
 
 /*VerPerfil permite extraer los valores del Perfil*/
-func VerPerfil(w http.ResponseWriter, r http.Request) {
+func VerPerfil(w http.ResponseWriter, r *http.Request) {
 
 	ID := r.URL.Query().Get("id")
 	if len(ID) < 1 {
